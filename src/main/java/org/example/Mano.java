@@ -1,27 +1,23 @@
 package org.example;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Mano {
-    private List<Carta> cartas;
-
-    public Mano(List<Carta> cartas) {
+    private final ArrayList<Carta> cartas;
+    /*
+    -public Mano(ArrayList<Carta> cartas) {
         this.cartas = cartas;
-    }
+    }*/
 
     public Mano() {
+        cartas = new ArrayList<>();
     }
 
     public void addCarta(Carta nuevaCarta) {
-
+        cartas.add(nuevaCarta);
     }
 
-    public List<Carta> getCartas() {
+    public ArrayList<Carta> getCartas() {
         return cartas;
-    }
-
-    @Override
-    public String toString() {
-        return cartas.toString();
     }
 }
