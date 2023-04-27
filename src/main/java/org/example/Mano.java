@@ -1,13 +1,13 @@
 package org.example;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Mano {
-    private List<Carta> cartas;
-
-    public Mano(List<Carta> cartas) {
+    private ArrayList<Carta> cartas;
+    /*
+    -public Mano(ArrayList<Carta> cartas) {
         this.cartas = cartas;
-    }
+    }*/
 
     public Mano() {
     }
@@ -16,7 +16,7 @@ public class Mano {
 
     }
 
-    public List<Carta> getCartas() {
+    public ArrayList<Carta> getCartas() {
         return cartas;
     }
 
